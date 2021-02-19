@@ -71,7 +71,7 @@ public class VideoStore {
                 } else{
                     System.out.println("Video has been returned");
                 }
-                listVideo();
+                listVideo(); // For showing the VideoList
             }
         }
     }
@@ -86,7 +86,7 @@ public class VideoStore {
         System.out.println("Please enter the Rating: ");
         int rating = sc.nextInt();
 
-        if (videoStore[i-1].isStatus()){
+        if (videoStore[i-1].isStatus()){ // Condition For Status Check
             videoStore[i-1].setRating(rating);
             System.out.println("Video has been rated");
             listVideo();
