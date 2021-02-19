@@ -44,6 +44,7 @@ public class VideoStore {
             }
         }
     }
+    
     /// @customermethod
     // Rent a Video
     void takeOnRent(boolean status, Scanner sc){
