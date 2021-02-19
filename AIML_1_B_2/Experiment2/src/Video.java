@@ -3,6 +3,8 @@ public class Video {
     private boolean status = false;
     private int rating = 0;
 
+
+    /// Getter and Setter Methods for the vars.
     Video(String name) {
         this.setName(name);
     }
