@@ -34,11 +34,11 @@ public class Launcher {
 	}
 
 	
-
+	// owner Menu
 	void ownerMenu(VideoStore mVideoStore) {
 
 		System.out.println("");
-        System.out.println("!!@ Owner Menu @!!");
+        System.out.println("!!@@ Owner Menu @@!!");
         System.out.println("1. Add video");
         System.out.println("2. List Inventory");
         System.out.println("3. Return video back");
@@ -62,7 +62,7 @@ public class Launcher {
 			case 3:
 				System.out.println("you are in return area.");
                 mVideoStore.listVideo();
-				mVideoStore.takeOnRent(false, sc);
+				mVideoStore.takeOnRent(false, sc); // false -> status = no 
 				ownerMenu(mVideoStore);
 				break;
 			case 4:
@@ -71,6 +71,7 @@ public class Launcher {
 		}
 	}
 
+	// Owner Menu
 	void customerMenu(VideoStore mVideoStore) {
 		System.out.println("");
 		System.out.println("!!@ Customer Menu !!@");

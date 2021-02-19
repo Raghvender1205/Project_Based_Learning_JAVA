@@ -4,8 +4,8 @@ public class Video {
     private int rating = 0;
 
 
-    /// Getter and Setter Methods for the vars.
-    Video(String name) {
+    /// Getter and Setter Methods for the variables
+    Video(String name) { // Constructor
         this.setName(name);
     }
     

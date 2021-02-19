@@ -45,6 +45,7 @@ public class VideoStore {
         }
     }
     /// @customermethod
+    // Rent a Video
     void takeOnRent(boolean status, Scanner sc){
         System.out.println(""); // Status check for the customer
         if(!status){
@@ -54,7 +55,7 @@ public class VideoStore {
         }
 
         int i = sc.nextInt();
-        if (i != 0){
+        if (i != 0){ // Check for status
             if (videoStore[i-1].isStatus() == status){
                 if (status){
                     System.out.println("Video is not available for rent, try again");
@@ -76,6 +77,7 @@ public class VideoStore {
     }
 
     /// @customermethod
+    // Enter Ratings to the Video 
     void provideRating(Scanner sc){
         System.out.println("");
         System.out.println("Please enter the video SR number for the rating:");
